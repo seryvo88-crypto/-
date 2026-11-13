@@ -9,8 +9,8 @@ android {
         applicationId = "hub.vpn"
         minSdk = 23          // Android 6.0
         targetSdk = 23       // старое поведение, чтобы не требовались новые разрешения
-        versionCode = 1
-        versionName = "0.1"
+        versionCode = 3
+        versionName = "0.3"
     }
     signingConfigs {
         // Постоянный ключ подписи: тогда новую версию можно ставить поверх старой, не удаляя приложение

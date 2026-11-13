@@ -82,6 +82,7 @@ class MainActivity : Activity() {
 
     override fun onCreate(b: Bundle?) {
         super.onCreate(b)
+        actionBar?.hide()
         window.statusBarColor = BG
         window.navigationBarColor = BG
         val root = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL; setPadding(dp(16), dp(16), dp(16), dp(24)) }
@@ -97,6 +98,7 @@ class MainActivity : Activity() {
         }
         head.addView(av, LinearLayout.LayoutParams(dp(44), dp(44)))
         head.addView(label("Паштет VPN", 22f, TXT, true).apply { setPadding(dp(12), 0, 0, 0) })
+        head.addView(label("v0.3", 12f, MUTED).apply { setPadding(dp(8), 0, 0, 0) })
         root.addView(head)
 
         // подписка
